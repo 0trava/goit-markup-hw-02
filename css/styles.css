@@ -1,10 +1,4 @@
 
-/* Основний колір сторінки #FFFFFF  */
-/* акцент #18A0FB */
-/* вторичный цвет фона #F5F5F5; */
-
-/* цвет основного текста #000000 */
-/* вторичный цвет текста  rgba(0, 0, 0, 0.8);*/
 
 :root {
   --primary-text-color: #212121;
@@ -12,6 +6,7 @@
   --accent-color: #2196F3;
   --primary-background: #F5F5F5;
   --second-background: #2F303A;
+  --third-background:#F5F4FA;
   --second-text-color: #FFFFFF;
   --button-background: #188CE8;
 }
@@ -20,11 +15,6 @@ body {
     background-color: var(--primary-background);
     color: var(--primary-text-color);
     font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.03em;
-    font-size: 14px;
-    line-height: 1.14;  
 }
 
 li {
@@ -34,7 +24,9 @@ li {
   /* Logo */
   .logo {
     font-family: Raleway;
+    font-weight: 700;
     font-size: 26px;
+    letter-spacing: 0.03em;
     line-height: 1.19;
     color: #000000;
     text-decoration: none;
@@ -46,12 +38,17 @@ li {
 
   /* Site nav */
 
+header {
+  background-color: var(--second-text-color);
+}
+
 .sity-nav, .link {
     color: var(--primary-text-color);
-    text-decoration: none; 
+    text-decoration: none;  
     font-weight: 500;
-    letter-spacing: 0.02em;
-    
+    font-size: 14px;
+    line-height: 1.14; 
+    letter-spacing: 0.02em;  
 }
 
 .link:hover, .link:focus{
@@ -68,6 +65,7 @@ li {
     text-decoration: none;   
     font-style: normal;
     font-weight: 500; 
+    line-height: 1.14;  
     letter-spacing: 0.02em;
 }
 
@@ -161,13 +159,18 @@ color: var(--second-text-color);
 /* Секція - Головні переваги */
 
 .title{
-  text-transform: uppercase;
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .text {
   color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.72;
+  letter-spacing: 0.03em;
 }
 
 /* Секція - Чим ми займаємося */
@@ -177,13 +180,14 @@ color: var(--second-text-color);
   font-size: 36px;
   line-height: 1.17;
   font-weight: 700;
+  letter-spacing: 0.03em;
 }
 
 
 /* Секція - Наша команда */
 
 .our-teem {
-  background: #F5F4FA;
+  background: var(--third-background);
 }
 
 .lead {
@@ -191,12 +195,14 @@ color: var(--second-text-color);
   line-height: 1.19;
   text-align: center;
   font-weight: 500;
+  letter-spacing: 0.03em;
 }
 
 .post {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 
@@ -207,17 +213,23 @@ color: var(--second-text-color);
   background-color: rgba(47, 48, 58, 1); 
 }
 
-.footer-nav-mail, .footer-nav-tel, .footer-adr {
+
+
+.footer-nav-mail, .footer-nav-tel, .footer-adr  {
   color: var(--title-text-color); 
-  text-decoration: none;   
+  text-decoration: none;  
   font-style: normal;
-  font-weight: 400; 
+  letter-spacing: 0.03em;
+  line-height: 1.14;  
+}
+
+.footer-adr {
+  color: var(--second-text-color);
 }
 
 .footer-nav-mail:hover, .footer-nav-tel:hover, .footer-adr:hover,
 .footer-nav-mail:focus, .footer-nav-tel:focus, .footer-adr:focus {
-  color: var(--second-text-color)
-  ;
+  color: var(--accent-color);
 }
 
 .foot-web{
@@ -225,7 +237,6 @@ color: var(--second-text-color);
 }
 
 /* Сторінка - Портфоліо */
-
 
 .headline {
   font-weight: 700;
@@ -236,9 +247,10 @@ color: var(--second-text-color);
 }
 
 .quote{
-font-weight: 400;
 font-size: 16px;
 line-height: 1.88;
+letter-spacing: 0.03em;
+font-weight: 400;
 color: var(--title-text-color);
 }
 
