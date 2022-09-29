@@ -9,6 +9,7 @@
   --third-background:#F5F4FA;
   --second-text-color: #FFFFFF;
   --button-background: #188CE8;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -114,7 +115,7 @@ color: var(--second-text-color);
 
 .buttons {
   cursor: pointer;
-  background: #F5F4FA;
+  background: var(--third-background);
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -216,11 +217,13 @@ color: var(--second-text-color);
 
 
 .footer-nav-mail, .footer-nav-tel, .footer-adr  {
-  color: var(--title-text-color); 
+  color: var(--footer-text-color); 
   text-decoration: none;  
   font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.72;
   letter-spacing: 0.03em;
-  line-height: 1.14;  
 }
 
 .footer-adr {
